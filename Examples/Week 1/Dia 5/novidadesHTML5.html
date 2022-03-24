@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Novidades</title>
+</head>
+<body>
+  <h4>Tag de video com mensagem de erro caso o browser não suporte a tag de video</h4>
+  <video width="320" height="240" controls>
+    <source src="byTheDocks.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+  </video>
+  <br>
+  <h4>Mesma tag, mas com os atributos autoplay (reproducao automatica), loop (ficar repetindo) e muted (para ficar mutado [nos navegadores, sem mexer nas configurações, só se está rolando autoplay com o video mutado])</h4>
+  <video width="320" height="240" autoplay loop muted controls>
+    <source src="homerPerai.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+  </video>
+  <br>
+  <p>Obs: controls serve pra mostrar o controle de pause, play, volume, etc. Usei no segundo video apenas para poder ativar o audio.</p>
+  <br>
+  <h4>Tag para inserir áudios, pra tipo podcast ou algo que caiba apenas o áudio. Para inserir autoplay aqui é mais complexo (não é só colocar o muted, no caso)</h4>
+  <audio controls>
+    <source src="sertaoEduardoQueirozCordel Encantado.mp3" type="audio/mpeg">
+    <source src="horse.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+  </audio>
+  <hr>
+  <br>
+  <h4>O input url, se a pessoa colocar um url sem estar no formato correto a tag não vai permitir</h4>
+  <input type="url">
+  <br>
+  <h4>Cria um icone que você pode puxar de um canto para o outro com um limite pré estabelecido</h4>
+  <input type="range" min="1" max="10">
+  <br>
+  <h4>Para escolher um tempo</h4>
+  <input type="time">
+  <br>
+  <h4>Você pode pre-selecionar com esse input, comum em autocomplete, mais fácil</h4>
+  <input type="search" list="weapons">
+    <datalist id="weapons" style="display:hidden;">
+      <option value="sword">
+      <option value="axe">
+      <option value="wade">
+    </datalist>
+</body>
+</html>

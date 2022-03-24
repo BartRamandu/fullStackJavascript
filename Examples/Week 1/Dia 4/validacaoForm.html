@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Validacoes no Form</title>
+</head>
+<body>
+  <h3>Repassando Conhecimentos</h3>
+  <hr>
+  <form action="https://www.google.com/search">
+    <label for="q">Pesquise obrigatoriamente sobre algo:</label><br>
+    <input type="text" id="q" name="q" placeholder="Digite algo que queira saber!" required>
+    <input type="submit" value="Pesquisar">
+  </form>
+  <br>
+  <form action="https://www.google.com/search">
+    <label for="q">Preencha obrigatoriamente um e-mail:</label><br>
+    <input type="email" id="q" name="q" placeholder="Digite seu email!" required>
+    <input type="submit" value="Pesquisar">
+  </form>
+  <br>
+  <form action="https://www.google.com/search">
+    <label for="q">Preencha obrigatoriamente uma senha:</label><br>
+    <input type="password" id="q" name="pwd" placeholder="Digite sua senha!" required>
+    <input type="submit" value="Pesquisar">
+  </form>
+  <br>
+  <form action="https://www.google.com/search">
+    <label for="q">Digite obrigatoriamente números:</label><br>
+    <input type="number" id="q" name="q" placeholder="Digite um numero de 1 a 10!" min="1" max="10" required>
+    <input type="submit" value="Pesquisar">
+  </form>
+  <br>
+  <h4>Data mínima e data máxima, e número entre 1 a 5</h4>
+  <form>
+    <label for="datemax">Enter a date before 1980-01-01:</label>
+    <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+  
+    <label for="datemin">Enter a date after 2000-01-01:</label>
+    <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+  
+    <label for="quantity">Quantity (between 1 and 5):</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="5">
+  </form>
+  <br>
+  <h4>Uma das opções não pode ser modificada e o botao reset para deixar tudo como era no inicio</h4>
+  <form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="Bart" disabled><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Ramandus"><br><br>
+    <input type="reset">
+  </form>
+  <br>
+  <h4>Não se pode mudar os textos/valores já estabelecidos</h4>
+  <form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="Bart" readonly><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Ramandus" readonly>
+  </form>
+  <br>
+  <h4>O tamanho e max de caracteres não pode ser aceito ou digitado a mais nesses 2 espaços</h4>
+  <form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" maxlength="20" size="20"><br>
+    <label for="pin">PIN:</label><br>
+    <input type="text" id="pin" name="pin" maxlength="4" size="4">
+  </form>
+  <br>
+  <h4>Quando se autopreenche com informações já digitadas</h4>
+  <form action="https://www.google.com/search" autocomplete="on">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" autocomplete="off"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+  <br>
+  <h4>Options com select</h4>
+  <form action="">
+    <label for="placeOfBirth">Naturalidade:</label>
+    <select name="placeOfBirth" id="placeOfBirth">
+      <option value="Recife">Recife</option>
+      <option value="Olinda">Olinda</option>
+      <option value="Paulista">Paulista</option>
+      <option value="Outros">Outros</option>
+    </select>
+  </form>
+  <br>
+  <h4>Options com list e datalist</h4>
+  <form>
+    <label for="browser">Browsers:</label>
+    <input type="search" name="browser" id="browser" list="browsers">
+    <datalist id="browsers">
+      <option value="Internet Explorer">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+  </form>
+  <br>
+  <h4>Autofocus</h4>
+  <form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" autofocus><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname">
+  </form>
+  <br>
+  <h4>Tamanho da imagem</h4>
+  <form>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="image" src="https://cdn.icon-icons.com/icons2/2189/PNG/512/arrow_right_icon_133719.png" alt="Submit" width="48" height="48">
+  </form>
+  <br>
+  <h4>Form que pula em um espaço de tempo predeterminado</h4>
+  <form>
+    <label for="points">Points:</label>
+    <input type="number" id="points" name="points" step="3">
+  </form>
+  <br>
+  <h4>Multiplos valores podem entrar aqui, nesse caso são múltiplos arquivos</h4>
+  <form>
+    <label for="files">Select files:</label>
+    <input type="file" id="files" name="files" multiple>
+  </form>
+  <br>
+  <h4>Um campo de entrada que pode conter apenas três letras (sem números ou caracteres especiais)</h4>
+  <form>
+    <label for="country_code">Country code:</label>
+    <input type="text" id="country_code" name="country_code"
+    pattern="[A-Za-z]{3}" title="Three letter country code">
+  </form>
+</body>
+</html>
