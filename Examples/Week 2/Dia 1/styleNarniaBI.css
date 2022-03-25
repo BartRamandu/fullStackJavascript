@@ -1,0 +1,17 @@
+h1{
+  color: #9e0000;
+  font-size: 40px;
+  border-color: #d8c302;
+  border-width: 2px;
+  border-style: dashed;
+}
+
+li{
+color: #9e0000;
+}
+
+body{
+  background-image: url(https://www.tribernna.com/wp-content/uploads/2020/11/cronicas-de-narnia.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

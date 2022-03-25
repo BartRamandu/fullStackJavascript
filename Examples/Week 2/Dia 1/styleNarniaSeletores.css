@@ -1,0 +1,29 @@
+h1{
+  color: #9e0000;
+  font-size: 40px;
+  border: #d8c302 2px dashed;
+}
+
+.goldenEra{
+  color: #fbff00;
+}
+
+#smaller{
+  font-size: 12px;
+  color: #00ffff;
+}
+
+#larger{
+  font-size: 25px;
+  color: #8605ff;
+}
+
+li{
+color: #9e0000;
+}
+
+body{
+  background-image: url(https://www.tribernna.com/wp-content/uploads/2020/11/cronicas-de-narnia.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
